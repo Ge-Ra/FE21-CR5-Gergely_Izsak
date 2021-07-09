@@ -36,11 +36,11 @@ class Restaurants extends Locations {
 
     display() {
         return `
-        ${super.display()}
-        <p class="card-text">Cuisine: ${this.cousineType}</p>
-        <p class="card-text">${this.webAdress}</p>
-        <p class="card-text">${this.telNum}</p>
-      `;
+            ${super.display()}
+            <p class="card-text">Cuisine: ${this.cousineType}</p>
+            <p class="card-text">${this.webAdress}</p>
+            <p class="card-text">${this.telNum}</p>
+      `
     }
 }
 
@@ -55,11 +55,11 @@ class Events extends Locations {
 
     display() {
         return ` 
-        ${super.display()}
-        <p class="card-text">Event: ${this.eventDate}</p>
-        <p class="card-text">From: ${this.eventTime}</p>
-        <p class="card-text">Price: ${this.price} €</p>
-        `
+            ${super.display()}
+            <p class="card-text">Event: ${this.eventDate}</p>
+            <p class="card-text">From: ${this.eventTime}</p>
+            <p class="card-text">Price: ${this.price} €</p>
+    `
     }
 }
 
@@ -94,8 +94,7 @@ for (let val of blogSite) {
 (document.getElementById("card") as HTMLElement).innerHTML = text;
 }
 
-(document.getElementById("sortUp") as HTMLElement).addEventListener("click", sortUp)
-console.log(blogSite)
+(document.getElementById("sortUp") as HTMLElement).addEventListener("click", sortUp)    
 
 //////////////////////////////////////////////////////// SORTING BUTTON DOWN
 

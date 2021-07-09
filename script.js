@@ -39,10 +39,10 @@ class Restaurants extends Locations {
     }
     display() {
         return `
-        ${super.display()}
-        <p class="card-text">Cuisine: ${this.cousineType}</p>
-        <p class="card-text">${this.webAdress}</p>
-        <p class="card-text">${this.telNum}</p>
+            ${super.display()}
+            <p class="card-text">Cuisine: ${this.cousineType}</p>
+            <p class="card-text">${this.webAdress}</p>
+            <p class="card-text">${this.telNum}</p>
       `;
     }
 }
@@ -58,11 +58,11 @@ class Events extends Locations {
     }
     display() {
         return ` 
-        ${super.display()}
-        <p class="card-text">Event: ${this.eventDate}</p>
-        <p class="card-text">From: ${this.eventTime}</p>
-        <p class="card-text">Price: ${this.price} €</p>
-        `;
+            ${super.display()}
+            <p class="card-text">Event: ${this.eventDate}</p>
+            <p class="card-text">From: ${this.eventTime}</p>
+            <p class="card-text">Price: ${this.price} €</p>
+    `;
     }
 }
 var newLocation1 = new Locations("Chamonix", 74400, "France", "images/Ontwerp-zonder-titel-2021-04-05T191218.134-1024x768.png", "May 10, 1980 12:00:00");
@@ -87,7 +87,6 @@ function sortUp() {
     document.getElementById("card").innerHTML = text;
 }
 document.getElementById("sortUp").addEventListener("click", sortUp);
-console.log(blogSite);
 //////////////////////////////////////////////////////// SORTING BUTTON DOWN
 function sortDown() {
     blogSite.sort(function (a, b) {
