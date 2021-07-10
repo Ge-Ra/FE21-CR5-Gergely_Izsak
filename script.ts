@@ -81,8 +81,8 @@ for (let val of blogSite) {
 //////////////////////////////////////////////////////// SORTING BUTTON UP
 
 function sortUp() {
-    blogSite.sort(function(a: string, b: string) {
-        var dateA = new Date(a.date), dateB = new Date(b.date);
+    blogSite.sort(function(a: any, b: any) {
+        var dateA: any = new Date(a.date), dateB: any = new Date(b.date);
         return dateA - dateB;
     });
 
@@ -100,8 +100,8 @@ for (let val of blogSite) {
 //////////////////////////////////////////////////////// SORTING BUTTON DOWN
 
 function sortDown() {
-    blogSite.sort(function (a: string, b: string) {
-        var dateA = new Date(a.date), dateB = new Date(b.date);
+    blogSite.sort(function (a: any, b: any) {
+        var dateA: any = new Date(a.date), dateB: any = new Date(b.date);
         return dateB - dateA;
     });
 
